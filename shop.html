@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="/css/shop.css" />
+ </head>
+ <body>
+  <header>
+   <nav class="nav-bar">
+    <h2 class="nav-title">CheckOut <span>()</span></h2>
+
+    <a href="/home.html">
+     <div class="logos">
+      <img
+       src="/img/zealite-mobile-logo.png"
+       alt="mobile logo"
+       class="mobile-logo"
+      />
+      <img
+       src="/img/zealite logo.png"
+       alt="desktop-logo"
+       class="desktop-logo"
+      />
+     </div>
+    </a>
+
+    <div class="icon">
+     <img src="/img/checkout-lock-icon.png" alt="lock icon" />
+    </div>
+   </nav>
+  </header>
+
+  <main>
+   <h2 class="title">Review your order</h2>
+   <section class="check-out">
+    <p class="js-cart-summary cart-summary"></p>
+    <p>Your cart is empty.</p>
+    <a class="button-primary" href="/amazon.html"> View products </a>
+   </section>
+
+   <section class="cart-item-container">
+    <div class="payment-summary">
+     <div class="js-payment-info">
+      <h3 class="payment-summary-title">Order Summary</h3>
+
+      <div class="payment-summary-row">
+       <p>Items (0):</p>
+       <span class="payment-summary-money">$0.00</span>
+      </div>
+
+      <div class="payment-summary-row">
+       <p>Shipping &amp; handling:</p>
+       <span class="payment-summary-money"> $0.00 </span>
+      </div>
+
+      <div class="payment-summary-row subtotal-row">
+       <p>Total before tax:</p>
+       <span class="payment-summary-money">$0.00</span>
+      </div>
+
+      <div class="payment-summary-row">
+       <p>Estimated tax (10%):</p>
+       <span class="payment-summary-money">$0.00</span>
+      </div>
+      <div class="gap"></div>
+      <div class="payment-summary-row total-row">
+       <p>Order total:</p>
+       <span class="payment-summary-money">$0.00</span>
+      </div>
+     </div>
+
+     <div class="payment-buttons-disabled" id="js-payment-buttons-container">
+      <div
+       class="paypal-button-container"
+       id="js-paypal-button-container "
+      ></div>
+
+      <button class="place-order-button" id="place-order-button-js ">
+       Place your order
+      </button>
+     </div>
+    </div>
+   </section>
+
+   <section class="product-info"></section>
+  </main>
+ </body>
+</html>

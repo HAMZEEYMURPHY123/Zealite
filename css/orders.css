@@ -1,0 +1,166 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.nav-bar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+
+ position: relative;
+ margin: 20px;
+}
+
+.mobile-logo {
+ width: 80px;
+ height: 80px;
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%) translateY(-55%);
+}
+.desktop-logo {
+ display: none;
+}
+.search-icon {
+ width: 20px;
+}
+.cart-icon {
+ width: 20px;
+}
+.right-icons {
+ gap: 90px;
+}
+
+.nav-links,
+a {
+ list-style-type: none;
+ text-decoration: none;
+}
+
+.nav-links {
+ position: absolute;
+ top: 60px;
+ left: 10px;
+ background-color: rgba(29, 76, 218, 0.938);
+ display: none;
+ flex-direction: column;
+ width: 100px;
+ padding: 0;
+ margin: 0;
+}
+.nav-links.active {
+ display: flex;
+}
+a {
+ text-decoration: none;
+ color: #000;
+ font-size: 1rem;
+ font-weight: 700;
+}
+
+/*container*/
+.topic {
+ text-align: center;
+}
+
+.order-container {
+ max-width: 800px;
+ margin: 5px;
+ font-family: sans-serif;
+}
+.order-header {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ text-align: start;
+ line-height: 22px;
+ background-color: #00000010;
+ padding: 10px;
+ border-radius: 10px;
+ margin-bottom: 15px;
+ max-width: 100%;
+}
+.ordered-details {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ gap: 10px;
+ padding: 10px;
+ border: 1px solid #ccc;
+ margin-bottom: 15px;
+ margin-left: 10px;
+ background-color: #dfd9d996;
+ max-width: 800px;
+ text-align: center;
+}
+.ordered-img {
+ max-width: 100%;
+ height: auto;
+}
+
+.track-package-button {
+ background-color: transparent;
+ padding: 2px 5px;
+ border: 1px solid #aaa;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.buy-again-button {
+ background-color: yellow;
+ padding: 3px 5px;
+ border: 1px solid #aaa;
+ border-radius: 5px;
+ cursor: pointer;
+}
+.buy-again-button:hover {
+ background-color: green;
+}
+.buy-again-icon {
+ max-width: 20px;
+ max-height: 30px;
+}
+.buy-again-success {
+ display: none;
+}
+
+/*Responsiveness*/
+@media (max-width: 768px) {
+ input {
+  width: 25em;
+  max-width: 35em;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+ }
+ .desktopLogoImg {
+  display: none;
+ }
+ .mobileLogoImg {
+  display: block;
+  width: 40px;
+  height: 45px;
+ }
+
+ .productIconImg {
+  display: none;
+ }
+ .navUl {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: rgba(28, 39, 70, 0.938);
+  flex-direction: column;
+  width: 200px;
+  padding: 1rem;
+ }
+ .navUl.active {
+  display: flex;
+ }
+ .hamburger {
+  display: flex;
+ }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orders</title>
+  <link rel="stylesheet" href="/css/orders.css" />
+ </head>
+ <body>
+  <header>
+   <nav class="nav-bar">
+    <div class="hamburger-bar" id="hamburger-bar-js">&#9776;</div>
+
+    <div class="logos">
+     <img
+      src="/img/zealite-mobile-logo.png"
+      alt="mobile logo"
+      class="mobile-logo"
+     />
+     <img src="/img/zealite logo.png" alt="desktop-logo" class="desktop-logo" />
+    </div>
+    <div class="right-icons">
+     <span class="search-icon"> <i class="fa fa-search"></i></span>
+     <span class="cart-icon"> <i class="fa fa-shopping-cart"></i></span>
+    </div>
+
+    <ul class="nav-links" id="nav-links-js">
+     <li><a href="/">Home</a></li>
+     <li><a href="/orders.html">Orders</a></li>
+     <li><a href="/">Contact</a></li>
+     <li><a href="/shop.html">Shop</a></li>
+    </ul>
+   </nav>
+  </header>
+
+  <main class="hero">
+   <h2 class="topic">Your Orders</h2>
+
+   <section class="order-container" id="order_container-js">
+    <div class="order-container">
+     <header class="order-header">
+      <p class="order-header-label">
+       Order Placed:
+       <span>April 27</span>
+      </p>
+
+      <p class="order-header-label">
+       Total:
+       <span>$54.88</span>
+      </p>
+
+      <p class="order-header-label">
+       Order ID: <span> eaab138b-2d68-2fcc-d22b-3d44fce66c28</span>
+      </p>
+     </header>
+
+     <section class="ordered-details">
+      <img src="/img/fridge.png" alt="Fridge" class="ordered-img" />
+
+      <div class="product-details">
+       <h3 class="product-name">Fridge</h3>
+
+       <div class="product-delivery-date">Arriving on: May 6</div>
+
+       <div class="product-quantity">Quantity: 2</div>
+
+       <button class="buy-again-button" id="buy-again-button-js">
+        <img class="buy-again-icon" src="/img/buy-again.png" />
+        <span class="buy-again-message">Buy it again</span>
+        <span class="buy-again-success"> ✓ Added </span>
+       </button>
+      </div>
+
+      <div class="product-actions">
+       <button class="track-package-button" id="track-package-button-js">
+        Track package
+       </button>
+      </div>
+
+      <img src="/img/gas-stove.jpg" alt="Gas-Stove" class="ordered-img" />
+
+      <div class="product-details">
+       <h3 class="product-name">Gas-Stove</h3>
+
+       <div class="product-delivery-date">Arriving on: May 6</div>
+
+       <div class="product-quantity">Quantity: 1</div>
+
+       <button class="buy-again-button" id="buy-again-button-js">
+        <img class="buy-again-icon" src="/img/buy-again.png" />
+        <span class="buy-again-message">Buy it again</span>
+        <span class="buy-again-success"> ✓ Added </span>
+       </button>
+      </div>
+
+      <div class="product-actions">
+       <button class="track-package-button" id="track-package-button-js">
+        Track package
+       </button>
+      </div>
+     </section>
+    </div>
+   </section>
+  </main>
+
+  <script src="/scripts/home.js"></script>
+ </body>
+</html>
