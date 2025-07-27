@@ -1,4 +1,4 @@
-import { cart } from '../data/cart.js';
+import { cart, addToCart } from '../data/cart.js';
 import { products } from '../data/product.js';
 
 const toggle = document.getElementById('hamburger-bar-js');
@@ -50,30 +50,20 @@ products.forEach((product) => {
 
 document.querySelector('.featured-products').innerHTML = productsHTML;
 
+function updateCartQuantity() {
+ let cartQuantity = 0;
+ cart.forEach((cartItem) => {
+  cartQuantity += cartItem.quantity;
+ });
+
+ document.querySelector('.js-cart-count').innerText = cartQuantity;
+}
+
 document.querySelectorAll('.add-product-js').forEach((button) => {
  button.addEventListener('click', () => {
   const productId = button.dataset.productId;
 
-  console.log('User Clicked:', productId);
-
-  /* const quantityInput = button.previousElementSibling;
-  const selectedQuantity = parseInt(quantityInput.value) || 1; */
-
-  const existingItem = cart.find((item) => item.productId === productId);
-  if (existingItem) {
-   existingItem.quantity += 1;
-  } else {
-   cart.push({
-    productId,
-    quantity: 1,
-   });
-  }
-
-  let cartQuantity = 0;
-  cart.forEach((item) => {
-   cartQuantity += item.quantity;
-  });
-
-  document.querySelector('.js-cart-count').innerText = cartQuantity;
+  addToCart(productId);
+  updateCartQuantity();
  });
 });
