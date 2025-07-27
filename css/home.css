@@ -94,6 +94,7 @@ a {
  font-weight: 500;
  font-size: 17px;
  border-radius: 10px;
+ cursor: pointer;
 }
 .featured-products {
  display: flex;
@@ -114,6 +115,7 @@ a {
  border-radius: 10px;
  border: none;
  background-color: rgb(0, 89, 255);
+ cursor: pointer;
 }
 
 .about {
