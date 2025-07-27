@@ -1,3 +1,6 @@
+import { cart } from '../data/cart.js';
+import { products } from '../data/product.js';
+
 const toggle = document.getElementById('hamburger-bar-js');
 const navLinks = document.getElementById('nav-links-js');
 
@@ -46,8 +49,6 @@ products.forEach((product) => {
 });
 
 document.querySelector('.featured-products').innerHTML = productsHTML;
-
-let cart = [];
 
 document.querySelectorAll('.add-product-js').forEach((button) => {
  button.addEventListener('click', () => {
