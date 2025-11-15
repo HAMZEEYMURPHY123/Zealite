@@ -124,3 +124,77 @@
 .delivery-option-price {
  color: #8d8888af;
 }
+
+/*Order Summar */
+.payment-summary-title {
+ font-size: 18px;
+ font-weight: 600;
+}
+.gap {
+ border: 1px solid #ddd;
+ margin: 10px;
+}
+.total-row {
+ color: #e71422;
+ font-weight: 600;
+ font-size: 17px;
+}
+.place-order-button {
+ background-color: yellow;
+ padding: 14px 9px;
+ width: 550px;
+ border: none;
+ border-radius: 5px;
+ font-size: 16px;
+ margin: 10px 22px;
+ cursor: pointer;
+}
+
+.place-order-button:hover {
+ background-color: #026802;
+ transition: ease-in;
+}
+
+.productImg {
+ width: 175px;
+ height: 179px;
+}
+
+.delivery-date {
+ color: #008000;
+ font-size: 1.5em;
+ font-weight: 600;
+}
+.caption {
+ font-size: 1.4em;
+ font-weight: 600;
+}
+
+.product-price {
+ color: #e71422;
+ font-size: 1.2em;
+ font-weight: 600;
+}
+.new-quantity-input {
+ width: 60px;
+ height: 25px;
+}
+.quantity-link {
+ color: #00ff;
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ font-size: 17px;
+}
+
+.quantity-link:hover {
+ color: #e71422;
+}
+.delivery-option-date {
+ color: #026802;
+ font-weight: 600;
+ font-size: 18px;
+}
+.delivery-option-price {
+ color: #8d8888af;
+}
