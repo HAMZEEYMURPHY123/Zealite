@@ -66,6 +66,7 @@
  font-weight: 600;
  font-size: 1rem;
 }
+
 .place-order-button {
  background-color: rgb(0, 89, 255);
  padding: 9px 5px;
@@ -138,21 +139,6 @@
  color: #e71422;
  font-weight: 600;
  font-size: 17px;
-}
-.place-order-button {
- background-color: yellow;
- padding: 14px 9px;
- width: 550px;
- border: none;
- border-radius: 5px;
- font-size: 16px;
- margin: 10px 22px;
- cursor: pointer;
-}
-
-.place-order-button:hover {
- background-color: #026802;
- transition: ease-in;
 }
 
 .productImg {
